@@ -40,8 +40,10 @@ body {
 @media (max-width: 768px) {
   .ContentChest {
     height: 380px;
-    font-size: 14px;
+  .custom-button {
+     font-size: 14px;
     padding: 11px 83px;
+  }
   }
 }
 
