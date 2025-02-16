@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Instagram Content Saver</title>
+</head>
+
+<body>
+  <div class="ContentChest" style="display: none;">
+    <span class="small-text">Download Now 😊</span>
+    <span class="title">Save Videos & Stories Instantly</span>
+    <span class="desc">Enter the Instagram content URL to generate and download the video.</span> <br>
+
+    <!-- Input Link -->
+    <div class="inputlink">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+        <g>
+          <path
+            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+          </path>
+        </g>
+      </svg>
+      <input id="query" class="input" type="search" placeholder="Paste the link..." name="searchbar" />
+    </div>
+
+    <div id="result"></div>
+
+
+
+
+
+    <!-- Fetch Button -->
+    <div class="button-wrapper">
+      <div class="gradient-background"></div>
+      <button id="fetch-button" class="custom-button" title="Generate video" onclick="FetchContent()"
+        style="font-family: monospace;">
+        Fetch Content
+        <svg aria-hidden="true" viewBox="0 0 10 10" height="10" width="10" fill="none" class="svg-icon">
+          <path d="M0 5h7" class="path-horizontal"></path>
+          <path d="M1 1l4 4-4 4" class="path-diagonal"></path>
+        </svg>
+      </button>
+    </div>
+
+
+    <!-- From Uiverse.io by alexruix -->
+
+    <div class="loaderFetch" id="loadingFetch">
+      <span class="loaderFetch-text">Loading...</span>
+      <span class="loadFetch"></span>
+    </div>
+
+
+
+
+  </div>
+
+
+
+
+
+
+
+  <!-- Popup Section -->
+  <div id="new-popup" class="popupFetched" style="display: flex;">
+    <div class="popupFetched-content">
+
+      <button class="popupFetched-close" onclick="goBackToFetchContent()">&times;</button>
+      <h2>Content Fetched!</h2>
+      <p>Enjoy your content download.</p>
+
+
+        <!-- Video Section -->
+        <div id="video-section" class="content-section photo-container"> <br>
+          <img id="photo-preview" src="test.jpg" alt="Fetched Photo">
+          <br>
+          <br>
+      </div>
+
+      <!-- Photo Section -->
+      <div id="photo-section" class="content-section">
+        <a id="video-download" href="#" target="_blank" class="download-link">Download Video</a> <br>
+          <a id="photo-download" href="#" download class="download-link">Download Photo</a>
+      </div>
+
+
+      <br>
+      <div class="ActionButtons">
+        <button onclick="DownloadVideo()" class="back-button">Download Reel</button> <br><Br>
+        <button onclick="DownloadPhoto()" class="back-button">Download Image</button>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+
+</html>

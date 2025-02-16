@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+                                <!-- CODE BY PIYUSH KUMAR -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+  <title>Instagram Content Saver</title>
+</head>
+
+                  <!-- contentchest -->
+<body>
+  <div class="ContentChest">
+    <a href="#">
+      <span class="small-text">
+        ezSnap
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+          <path
+            d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm0-2h10c3.87 0 7 3.13 7 7v10c0 3.87-3.13 7-7 7H7c-3.87 0-7-3.13-7-7V7C0 3.13 3.13 0 7 0zm5 5.5c-3.03 0-5.5 2.47-5.5 5.5s2.47 5.5 5.5 5.5 5.5-2.47 5.5-5.5-2.47-5.5-5.5-5.5zm0 2c1.93 0 3.5 1.57 3.5 3.5s-1.57 3.5-3.5 3.5-3.5-1.57-3.5-3.5 1.57-3.5 3.5-3.5zm6.5-.25c-.69 0-1.25.56-1.25 1.25s.56 1.25 1.25 1.25 1.25-.56 1.25-1.25-.56-1.25-1.25-1.25z" />
+        </svg>
+      </span>
+    </a>
+
+    <span class="title">Save Videos & Images Instantly</span>
+    <span class="desc">Enter the Instagram content URL to generate and download the video.</span> <br>
+
+    <!-- Input Link -->
+    <div class="inputlink">
+      <svg viewBox="0 0 24 24" aria-hidden="true" class="search-icon">
+        <g>
+          <path
+            d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z">
+          </path>
+        </g>
+      </svg>
+      <input id="query" class="input" type="search" placeholder="Paste the link 🚀" name="searchbar" />
+    </div>
+
+    <div id="result"></div>
+
+
+
+    <!-- Fetch Button -->
+    <div class="button-wrapper">
+      <div class="gradient-background"></div>
+      <button id="fetch-button" class="custom-button" title="Generate video" onclick="FetchContent()"
+        style="font-family: monospace;">
+        Fetch Content
+        <svg aria-hidden="true" viewBox="0 0 10 10" height="10" width="10" fill="none" class="svg-icon">
+          <path d="M0 5h7" class="path-horizontal"></path>
+          <path d="M1 1l4 4-4 4" class="path-diagonal"></path>
+        </svg>
+      </button>
+    </div>
+
+
+    <!-- loaderFetch -->
+
+    <div class="loaderFetch" id="loadingFetch">
+      <span class="loaderFetch-text">Loading...</span>
+      <span class="loadFetch"></span>
+    </div>
+
+  </div>
+
+
+
+  <!-- Popup Section -->
+  <div id="new-popup" class="popupFetched">
+    <div class="popupFetched-content">
+
+      <button class="popupFetched-close" onclick="goBackToFetchContent()">&times;</button>
+      <h2 style="color: rgb(237, 234, 234);">Content Fetched!</h2>
+      <p style="color: rgb(164, 164, 164); font-weight: bold;"><u>Close this and fetch your next reel</u>🚀</p>
+
+      <!-- fetched photo --> <br>
+      <div id="video-section" class="content-section photo-container"> <br>
+        <img id="photo-preview" src="test.jpg" alt="Fetched Photo">
+        <br>
+        <br>
+      </div>
+
+      <!-- download reel&image button -->
+      <br>
+      <div class="ActionButtons">
+
+        <button type="button" class="button-reel" onclick="downloadVideo()" id="buttonDownloadReel">
+          <span class="fold"></span>
+          <div class="points_wrapper"> <i class="point"></i> <i class="point"></i> <i class="point"></i> <i
+              class="point"></i> <i class="point"></i> <i class="point"></i> <i class="point"></i> <i class="point"></i>
+            <i class="point"></i> <i class="point"></i> </div>
+          <span class="inner"> <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+              <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37">
+              </polyline>
+            </svg> Reel </span>
+        </button>
+
+        <button type="button" class="button-reel" onclick="downloadImage()">
+          <span class="fold"></span>
+          <div class="points_wrapper"> <i class="point"></i> <i class="point"></i> <i class="point"></i> <i
+              class="point"></i> <i class="point"></i> <i class="point"></i> <i class="point"></i> <i class="point"></i>
+            <i class="point"></i> <i class="point"></i> </div>
+          <span class="inner"> <svg class="icon" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5">
+              <polyline points="13.18 1.37 13.18 9.64 21.45 9.64 10.82 22.63 10.82 14.36 2.55 14.36 13.18 1.37">
+              </polyline>
+            </svg> Image </span>
+        </button>
+
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="popup-overlay" id="popup-overlay"></div>
+
+  <!-- popup error -->
+  <div class="cookies-card" id="errorpop-up">
+    <p class="cookie-heading">Something’s Not Right!</p>
+    <p class="cookie-para" id="popup-message">
+    </p>
+    <div class="pop-upbutton-wrapper">
+      <button class="accept cookie-button" onclick="hideerrorPopup()">close</button>
+    </div>
+  </div>
+
+</body>
+
+</html>
