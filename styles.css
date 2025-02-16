@@ -36,9 +36,12 @@ body {
   border: 1px solid rgb(84 90 106);
 }
 
+/* for media like mobile  */
 @media (max-width: 768px) {
   .ContentChest {
     height: 380px;
+    font-size: 14px;
+    padding: 11px 83px;
   }
 }
 
