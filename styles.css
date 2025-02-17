@@ -248,12 +248,7 @@ body {
     padding: 12px; /* Adjust padding for better fitting */
     font-size: 14px; /* Reduce font size */
   }
-  .title {
-    font-size: 20px; /* Adjust the font size of the title */
-  }
-  .desc {
-    font-size: 12px; /* Adjust description font size */
-  }
+ 
 }
 
 
