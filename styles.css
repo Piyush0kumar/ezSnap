@@ -222,6 +222,7 @@ body {
   backdrop-filter: blur(8px); /* Glass effect */
   z-index: 1000;
   animation: fadeIn 0.4s ease-in-out;
+  overflow-y: auto; /* Enable scroll for taller content */
 }
 
 .popupFetched-content {
@@ -238,6 +239,9 @@ body {
   animation: bounceIn 0.5s ease-out;
   transform-origin: center;
   transition: box-shadow 0.4s ease-in-out;
+  font-size: 16px; /* Prevent zoom on mobile */
+  touch-action: manipulation; /* Disable touch zoom */
+  overflow: hidden; /* Prevent unwanted overflow */
 }
 
 @media (max-width: 600px) {
