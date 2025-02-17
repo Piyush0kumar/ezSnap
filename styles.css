@@ -243,11 +243,11 @@ body {
     padding: 15px; /* Reduce padding on small screens */
     height: auto; /* Allow content to flow naturally */
   }
-  .custom-button {
-    width: 100%; /* Make the button full width */
-    padding: 12px; /* Adjust padding for better fitting */
-    font-size: 14px; /* Reduce font size */
-  }
+  /* .custom-button {
+    /* width: 100%; /* Make the button full width */
+    /* padding: 12px; Adjust padding for better fitting */
+    /* font-size: 14px; Reduce font size */
+  /* }   */
  
 }
 
