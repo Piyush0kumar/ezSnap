@@ -234,12 +234,12 @@ body {
   transition: box-shadow 0.4s ease-in-out;
 }
 
-@media (max-width: 600px) {
-  .ContentChest {
-    padding: 15px; /* Reduce padding on small screens */
-    height: auto; /* Allow content to flow naturally */
-  }
-}
+/* @media (max-width: 600px) {
+  .ContentChest { */
+    /* padding: 15px; Reduce padding on small screens */
+    /* height: auto; Allow content to flow naturally */
+  /* }
+} */
 
 
 /* Close button */
