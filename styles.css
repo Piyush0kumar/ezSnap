@@ -230,7 +230,8 @@ body {
   backdrop-filter: blur(10px);
   padding: 30px;
   border-radius: 18px;
-  width: 350px;
+  width: 90%; /* Ensure popup width adapts to screen size */
+  max-width: 350px; /* Limit max width for larger screens */
   text-align: center;
   position: relative;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), 0 0 25px rgba(180, 0, 255, 0.4); 
