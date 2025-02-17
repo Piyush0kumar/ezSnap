@@ -224,8 +224,8 @@ body {
   backdrop-filter: blur(10px);
   padding: 20px;
   border-radius: 18px;
-  width: 96%; /* Ensure popup width adapts to screen size */
-  max-width: 350px; /* Limit max width for larger screens */
+  width: 350px; /* Ensure popup width adapts to screen size */
+  /* max-width: 350px; Limit max width for larger screens */
   text-align: center;
   position: relative;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.4), 0 0 25px rgba(180, 0, 255, 0.4); 
@@ -234,12 +234,12 @@ body {
   transition: box-shadow 0.4s ease-in-out;
 }
 
-/* @media (max-width: 600px) {
-  .ContentChest { */
-    /* padding: 15px; Reduce padding on small screens */
-    /* height: auto; Allow content to flow naturally */
-  /* }
-} */
+@media (max-width: 600px) {
+  .ContentChest {
+    padding: 15px; /* Reduce padding on small screens */
+    height: auto; /* Allow content to flow naturally */
+  }
+}
 
 
 /* Close button */
