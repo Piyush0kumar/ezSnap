@@ -10,7 +10,7 @@ const database = require("./database"); // Import the database connection
 const useragent = require("user-agent");
 
 const app = express();
-const port = 3000;
+const port = 5000;
 
 
 function deleteFilesByExtension(directory, extensions) {
