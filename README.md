@@ -25,7 +25,7 @@ ezSnap is a simple and efficient video downloader that allows users to download 
 🔧 Installation
 1️⃣ Clone the Repository
 
-git clone https://github.com/piyush0kumar/ezsnap.git
+git clone https://github.com/eZpiyush/ezsnap.git
 cd ezsnap
 
 2️⃣ Install Dependencies
