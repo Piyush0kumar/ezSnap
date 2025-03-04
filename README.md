@@ -10,8 +10,8 @@ ezSnap is a simple and efficient video downloader that allows users to download 
     🌐 Self-Hosted on an IONOS VPS.
 
 
-    ___
-    
+___
+
     ##🏗️ Tech Stack
     | Component       | Technology Used |
     |-----------------|----------------|
@@ -21,7 +21,7 @@ ezSnap is a simple and efficient video downloader that allows users to download 
     | **Processing**  | Python  (for instagram Downloads) |
     | **Hosting**     | IONOS |
 
-    ___
+___
     
 
 🔧 Installation
