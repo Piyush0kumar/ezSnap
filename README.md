@@ -1,6 +1,7 @@
 📥 ezSnap - Online Video Downloader
 
 ezSnap is a simple and efficient video downloader that allows users to download videos from Instagram. It features a custom frontend and backend for seamless processing.
+
 🚀 Features
 
     📌 Download Videos from Instagram.
@@ -10,9 +11,7 @@ ezSnap is a simple and efficient video downloader that allows users to download 
     🌐 Self-Hosted on an IONOS VPS.
 
 
-___
-
-##🏗️ Tech Stack
+🏗️ Tech Stack
 | Component       | Technology Used |
 |-----------------|----------------|
 | **Frontend**    | HTML, CSS, JavaScript |
@@ -20,7 +19,7 @@ ___
 | **Database**    | MySQL (Hostinger) |
 | **Processing**  | Python  (for instagram Downloads) |
 | **Hosting**     | IONOS |
-___
+
     
 
 🔧 Installation
