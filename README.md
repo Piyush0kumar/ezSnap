@@ -3,19 +3,23 @@
 ezSnap is a simple and efficient video downloader that allows users to download videos from Instagram, Facebook, and YouTube. It features a custom frontend and backend for seamless processing.
 🚀 Features
 
-    📌 Download Videos from Instagram, Facebook, and YouTube.
+    📌 Download Videos from Instagram.
     ⚡ Fast & Efficient processing using a Python script integrated with Node.js.
     🗃️ Database Logging (IP address, access timestamps, and device type).
     🎨 Custom UI/UX for a smooth user experience.
     🌐 Self-Hosted on an IONOS VPS.
 
-🛠️ Tech Stack
 
-    Frontend: HTML, CSS, JavaScript
-    Backend: Node.js (Express.js)
-    Processing: Python (for Instagram downloads)
-    Database: SQL (storing user activity logs)
-    Hosting: IONOS VPS
+🏗️ Tech Stack
+
+    | Component       | Technology Used |
+    |-----------------|----------------|
+    | **Frontend**    | HTML, CSS, JavaScript |
+    | **Backend**     | Node.js, Express.js |
+    | **Database**    | MySQL (Hostinger) |
+    | **Processing**  | Python  (for instagram Downloads) |
+    | **Hosting**     |  IONOS |
+    
 
 🔧 Installation
 1️⃣ Clone the Repository
@@ -65,4 +69,3 @@ Feel free to submit issues and pull requests!
 MIT License
 🔗 Live Demo (if hosted)
 
-Let me know if you need any modifications! 🚀
