@@ -12,15 +12,14 @@ ezSnap is a simple and efficient video downloader that allows users to download 
 
 ___
 
-    ##🏗️ Tech Stack
-    | Component       | Technology Used |
-    |-----------------|----------------|
-    | **Frontend**    | HTML, CSS, JavaScript |
-    | **Backend**     | Node.js, Express.js |
-    | **Database**    | MySQL (Hostinger) |
-    | **Processing**  | Python  (for instagram Downloads) |
-    | **Hosting**     | IONOS |
-
+##🏗️ Tech Stack
+| Component       | Technology Used |
+|-----------------|----------------|
+| **Frontend**    | HTML, CSS, JavaScript |
+| **Backend**     | Node.js, Express.js |
+| **Database**    | MySQL (Hostinger) |
+| **Processing**  | Python  (for instagram Downloads) |
+| **Hosting**     | IONOS |
 ___
     
 
