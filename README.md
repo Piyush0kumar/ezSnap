@@ -26,19 +26,16 @@ ___
 🔧 Installation
 1️⃣ Clone the Repository
 
-git clone https://github.com/yourusername/ezsnap.git
+git clone https://github.com/piyush0kumar/ezsnap.git
 cd ezsnap
 
 2️⃣ Install Dependencies
 
 npm install
-pip install -r requirements.txt
 
 3️⃣ Configure Environment Variables
 
-Create a .env file in the root directory and add the required API keys or database configurations:
-
-DATABASE_URL=your_database_url
+configure the databse file according to your own database credentials
 
 4️⃣ Run the Backend
 
@@ -47,6 +44,7 @@ node server.js
 5️⃣ Run the Frontend
 
 Open index.html in your browser or set up a local server.
+
 ⚙️ How It Works
 
     Users paste a video URL into the input field.
@@ -54,9 +52,7 @@ Open index.html in your browser or set up a local server.
     The downloaded video is stored temporarily and provided for user download.
     User activity is logged in the SQL database.
 
-📸 Screenshots
 
-(Add screenshots of your UI here)
 📌 Future Enhancements
 
     📺 Support for more platforms
@@ -68,6 +64,5 @@ Open index.html in your browser or set up a local server.
 Feel free to submit issues and pull requests!
 📝 License
 
-MIT License
-🔗 Live Demo (if hosted)
+
 
